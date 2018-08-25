@@ -1,26 +1,29 @@
-import React from "react";
-import { hot } from "react-hot-loader";
+import React from 'react';
+import { hot } from 'react-hot-loader';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      index: 1
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+  state = {
+    index: 1,
+  };
 
-  handleClick() {
+  handleClick = () => {
+    const { index } = this.state;
     this.setState({
-      index: this.state.index + 1
+      index: index + 1,
     });
-  }
+  };
 
   render() {
+    const { index } = this.state;
     return (
       <div>
-        <div onClick={this.handleClick}>Hot reload test</div>
-        <span>{this.state.index}</span>
+        <div
+          onClick={this.handleClick}
+          role="presentation"
+        >
+          Hot reload test success
+        </div>
+        <span className="number">{index}</span>
       </div>
     );
   }
