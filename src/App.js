@@ -1,5 +1,6 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
+import Routes from './Routes';
 
 class App extends React.Component {
   state = {
@@ -14,16 +15,9 @@ class App extends React.Component {
   };
 
   render() {
-    const { index } = this.state;
     return (
       <div>
-        <div
-          onClick={this.handleClick}
-          role="presentation"
-        >
-          Hot reload test success
-        </div>
-        <span className="number">{index}</span>
+        <Routes />
       </div>
     );
   }
