@@ -9,8 +9,8 @@
     "start": "webpack-dev-server --hot",
     "lint:fix": "eslint src/**.js --fix"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "zhangwang <zhangwang2014@iCloud.com>",
+  "license": "MIT",
   "devDependencies": {
     "assets-webpack-plugin": "^3.9.6",
     "autoprefixer": "^9.1.3",
@@ -46,5 +46,6 @@
     "react-dom": "^16.4.2",
     "react-hot-loader": "^4.3.5",
     "react-router-dom": "^4.3.1"
-  }
+  },
+  "repository": "https://github.com/Val-Zhang/webpack-demo.git"
 }
